@@ -5,7 +5,7 @@ function Payment(props){
     const {amount}=useParams();
     return(
         <>
-        
+        <h2 id="details">Please enter the following details</h2>
             <div className='payment'>
             <div className="mb-3">
   <label htmlFor="exampleFormControlInput1" className="form-label">Your Name</label>

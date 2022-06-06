@@ -7,7 +7,7 @@ function Allnav(){
     var x;
     useEffect(()=>{
       x=localStorage.getItem("UserFoodie.com:->)9^@48$0");
-      if(x!==undefined || x!==null){
+      if(x!=undefined || x!=null){
         setAccountInfo(200);
         
       }
@@ -28,7 +28,7 @@ function Allnav(){
                 </div>
                 <div id="homeaccount">
                   {
-                    accountInfo===200?(
+                    accountInfo==200?(
                       <><h4 onClick={()=>{
                         localStorage.removeItem("UserFoodie.com:->)9^@48$0");
                         setAccountInfo(404);
