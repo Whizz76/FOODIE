@@ -8,6 +8,7 @@
     color:white;
 
 }
+
 #homelogo{
     color:#ce0505!important;
     background-color: white!important;
@@ -31,9 +32,13 @@
     border-radius: 5px;
    text-align: center;
    padding: 10px;
+   cursor: pointer;
    margin-left: 10px;
    margin-left: 20px;
 
+}
+#homeaccout h4{
+    cursor: pointer;
 }
 #i{
     visibility: hidden;
@@ -84,7 +89,7 @@ i{
 }
 @media (max-width:350px){
     #homeaccount h4, #homeaccount h5{
-        display: none;
+       font-size: 70%;
 
     }
     i{

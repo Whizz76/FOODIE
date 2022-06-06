@@ -6,6 +6,10 @@
     height: 500px;
     
 }
+#loader{
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
 @media (max-width:460px){
     #loader img{
         width: 400px;

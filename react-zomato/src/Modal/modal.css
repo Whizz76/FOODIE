@@ -1,0 +1,126 @@
+.modal-dialog{
+    max-width: 60vw;
+    margin: 1.75rem auto;
+}
+.item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menuInfo{
+    margin-left: 0;
+}
+.amount span{
+    display: block;
+    font-size:150%;
+    padding: 5px;
+    border: 1px solid green;
+    width: 30px;
+    text-align: center;
+    border-radius: 5px;
+    
+}
+.amounted{
+    background-color: white;
+    color: #192f60;
+}
+.amount .values{
+    font-weight: bolder;
+    cursor: pointer;
+    
+}
+.amount .adding{
+    background-color: rgb(242, 248, 242);
+    color: darkgreen;
+}
+.amount .removing{
+    background-color: rgb(253, 246, 246);
+    color: darkred;
+}
+.amount{
+    display: flex;
+    position: relative;
+    top: -30px;
+    
+    
+}
+.menuImage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.menuImage img{
+    margin-top: 40px;
+    transform:scale(0.8);
+    display:block ;
+    width: 150px;
+    box-shadow: 0 3px 6px 0 rgba(0,0,0,0.4);
+    height: 150px;
+    border-radius: 10px;
+}
+.item h3,.item h5{
+    color:#192f60 ;
+    
+
+}
+.modal-footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(230, 250, 253);
+    
+}
+.modal-footer h2{
+    color: #192f60;
+    font-family: 'Secular One', sans-serif;
+    font-weight: bolder;
+}
+.modal-footer button{
+    display: block;
+    width: 30%;
+    border: none;
+    background-color: red;
+    color: white;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: bolder;
+    box-shadow: 0 3px 6px 0 rgba(0,0,0,0.4);
+    transition: 0.5s;
+    height: 50px;
+    font-size: 120%;
+    padding: 5px;
+    border-radius: 5px;
+}
+.modal-footer button:hover{
+    box-shadow: -5px 5px 5px rgba(0,0,0,0.4);
+}
+.item h5{
+    margin-top: 20px;
+    width: 200px;
+    font-weight: bolder;
+    font-family: 'Overlock', cursive;
+}
+.item h3{
+    margin-top: 20px;
+    font-family: 'Secular One', sans-serif;
+}
+.modal-title{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: bolder;
+    color:#192f60 ;
+    margin-top: 40px;
+    font-size: 200%;
+}
+@media (max-width:700px){
+    .modal-dialog{
+        max-width: 80vw;
+    }
+}
+@media (max-width:600px){
+    .modal-dialog{
+        max-width: 90vw;
+    }
+}
+@media (max-width:450px){
+    .modal-footer button{
+        width: 40%;
+    }
+}

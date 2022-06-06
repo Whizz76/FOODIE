@@ -4,7 +4,8 @@ import {useNavigate} from 'react-router-dom'
 import {BrowseRouter,Routes,Route} from "react-router-dom"
 import Details from '../restaurantDetails/details'
 function Card(props){
-	const restaurants=props.item;
+	const restaurantList=props.item;
+	const l=restaurantList.length;
 	const navigate=useNavigate();
 	const redirectDetail=(event)=>{
 		navigate("restaurant/"+event);
@@ -12,26 +13,29 @@ function Card(props){
 	}
 	
     return(
-        <>
-		
-
-
-	<a href='' onClick={()=>redirectDetail(restaurants._id)} key={restaurants._id}>
-		<div id="restoCard">
-			<div id="firstRow">
-				<div id="frfp"><img src={restaurants.thumb} alt="food image loading..." />
-				</div><div id="address"><h3>{restaurants.name}</h3>
-				<h5>{restaurants.address}</h5></div>
-				</div>
-				<div id="hhr">
-				<hr /></div>
-				<div id="lastRow">
-					<div id="cuis"><h5>Cuisine :</h5>
-					<h5>Cost :</h5></div>
-					<div id="cuisInfo">
-						<h5>{restaurants.Cuisine[0].name}</h5>
-						<h5><>&#8377;</>{restaurants.cost}</h5></div></div>
+        <><div>
+		{restaurantList.length>0 ? restaurantList.map((restaurants)=>{return <a href='' onClick={()=>redirectDetail(restaurants._id)} key={restaurants._id}>
+	<div id="restoCard">
+		<div id="firstRow">
+			<div id="frfp"><img src={restaurants.thumb} alt="food image loading..." />
+			</div><div id="address"><h3>{restaurants.name}</h3>
+			<h5>{restaurants.address}</h5></div>
 			</div>
+			<div id="hhr">
+			<hr /></div>
+			<div id="lastRow">
+				<div id="cuis"><h5>Cuisine :</h5>
+				<h5 id="cost">Cost :</h5></div>
+				<div id="cuisInfo">
+					<h5>{restaurants.Cuisine.map(i=>i.name+', ')}</h5>
+					<h5><>&#8377;</>{restaurants.cost}</h5></div></div>
+		</div></a>
+
+
+		}):<h1 id="notfound">Nothing to show</h1>}
+	 
+ </div>
+ 
         {/*<div className="card menua">
 			<div className="row ab">
 			<div className="colx col-lg-3 col-sm-3 col-md-3">
@@ -47,7 +51,7 @@ function Card(props){
 <span className="bakery">{restaurants.Cuisine[0].name}</span><br/>
 <span className="costly"><>&#8377;</>{restaurants.cost}</span></div>
 	</div></div>*/}
-	</a>
+	
 	
 	
 	</>

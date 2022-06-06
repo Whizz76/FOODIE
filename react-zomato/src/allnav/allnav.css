@@ -35,6 +35,9 @@
    margin-left: 20px;
 
 }
+#homeaccount h4,h5{
+    cursor: pointer;
+}
 #i{
     visibility: hidden;
     background-color: #ce0505;
@@ -84,7 +87,7 @@ i{
 }
 @media (max-width:350px){
     #homeaccount h4, #homeaccount h5{
-        display: none;
+        font-size: 70%;
 
     }
     i{

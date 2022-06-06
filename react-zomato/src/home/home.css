@@ -3,9 +3,27 @@
     justify-content: space-between;
     
 }
+#pageNo{
+    text-align: center;
+    font-size: 140%;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: bolder;
+    color:#192f60;
+    margin-top: 40px;
+}
 @media (max-width:630px){
     #filterandrest{
         justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+#res{
+    height: 800px;
+}
+@media(max-width:778px){
+    #res{
+        height: 700px;
     }
 }
 

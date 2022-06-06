@@ -7,9 +7,14 @@
     margin: 20px;
     padding: 30px;
     position: relative;
+    transition: 0.5s;
    
 }
-
+#notfound{
+    text-align: center;
+    font-family: 'Overlock', cursive;
+    color: darkred;
+}
 #firstRow{
     display: flex;
     flex-direction: row;
@@ -136,6 +141,21 @@ hr{
 @media (max-width:318px){
     #lastRow h5{
         font-size: 80%;
+    }
+    #restoCard{
+        height: 280px;
+    }
+    #cuisInfo{
+        width: 120%;
+    }
+}
+@media (max-width:380px){
+    #cuis h5{
+        width: 120%;
+    }
+    #cuis #cost{
+        position: relative;
+        top: 10px;
     }
 }
 

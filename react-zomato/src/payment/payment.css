@@ -1,0 +1,19 @@
+.payment div{
+    width: 80%;
+    margin-top: 20px;
+}
+.payment{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pay{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pay div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
