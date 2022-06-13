@@ -190,6 +190,8 @@ function Home(){
             <>
             {!l?(
                 <>
+                <Allnav/>
+                
                 <Loading/>
                 </>
             ):(

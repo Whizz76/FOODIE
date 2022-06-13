@@ -10,6 +10,14 @@
     color: red;
     display: none;
 }
+#alreadyAccount{
+    text-align: center;
+    margin-top: 20px;
+}
+#alreadyAccount span{
+    color: darkblue;
+    display: inline-block;
+}
 .submit{
     display: flex;
     justify-content: center;

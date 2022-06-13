@@ -120,6 +120,10 @@
     
         
     }
+    .head h1{
+        color: #192f60;
+        font-family: 'Secular One', sans-serif;
+    }
     a{
         display: block;
     }
@@ -329,14 +333,14 @@
             font-size: 160%;
         }
         #login{
-            font-size: 75%;
+            font-size: 105%;
             height: 40px;
             padding-left: 2px;
         }
         #account{
-            font-size: 75%;
+            font-size: 105%;
             height: 40px;
-          min-width: 30%;
+          min-width: 40%;
            border-width: 1.5px;
            border-radius: 0;
         }
@@ -349,14 +353,14 @@
             font-size: 140%;
         }
         #login{
-            font-size: 70%;
+            font-size: 100%;
             height: 40px;
             padding-left: 2px;
         }
         #account{
-            font-size: 70%;
+            font-size: 100%;
             height: 40px;
-            min-width: 40%;
+            min-width: 50%;
             border-width: 1.5px;
             border-radius: 0;
         }
@@ -413,9 +417,9 @@
     }
     @media(max-width:430px){
         .upper{
-            height: 400px!important;
+            height: 500px!important;
             background-image: url(Table.png);
-            box-shadow: -140px -120px 500px #4f0707 inset;
+            box-shadow: -100px -70px 400px #4f0707 inset;
         }
     }
     @media (max-width: 600px) and (min-width: 576px){

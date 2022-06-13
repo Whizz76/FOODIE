@@ -1,10 +1,13 @@
 import { propTypes } from 'react-bootstrap/esm/Image';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
+import Allnav from '../allnav/allnav';
 import './payment.css';
-function Payment(props){
-    const {amount}=useParams();
+function Payment(){
+  const navigate=useNavigate();
+    const amount=localStorage.getItem("am^unt/Fo^o^die:>)00>@$508^&");
     return(
         <>
+        <Allnav/>
         <h2 id="details">Please enter the following details</h2>
             <div className='payment'>
             <div className="mb-3">
@@ -29,7 +32,10 @@ function Payment(props){
             
             <div className="mb-3">
   
-  <input type="submit" className="form-control" value="Pay" /></div>
+  <input type="submit" className="form-control" value="Pay" onClick={()=>{
+    localStorage.removeItem("am^unt/Fo^o^die:>)00>@$508^&");
+    navigate("/");
+  }} /></div>
 </div>
 
             

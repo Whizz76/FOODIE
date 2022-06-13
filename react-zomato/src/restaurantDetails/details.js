@@ -60,6 +60,7 @@ function Details(){
         <>
         {!complete ?(
             <>
+            <Allnav/>
             <Loading />
             </>
         ):(

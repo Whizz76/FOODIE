@@ -14,7 +14,9 @@ function Card(props){
 	
     return(
         <><div>
-		{restaurantList.length>0 ? restaurantList.map((restaurants)=>{return <a href='' onClick={()=>redirectDetail(restaurants._id)} key={restaurants._id}>
+		{restaurantList.length>0 ? restaurantList.map((restaurants)=>{return <a href='' onClick={()=>{
+			window.scrollTo(0,0);
+			redirectDetail(restaurants._id)}} key={restaurants._id}>
 	<div id="restoCard">
 		<div id="firstRow">
 			<div id="frfp"><img src={restaurants.thumb} alt="food image loading..." />

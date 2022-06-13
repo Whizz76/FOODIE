@@ -59,29 +59,35 @@ function Header(){
   <div className="row restlogo"> 
  <span id="restlogo">e!</span></div>
  <p id="tag">Find the best restaurants, cafes, and bars</p></div>
-    <div className="container">
+    <div className="head container">
 <h1>Quick Searches</h1>
 <p id="hi"> Discover restaurants by type of meal</p>
 </div>
 <div className="xx">
 <div className="row boxa xy">
-  <div className="row cola col-lg-3 col-md-5" style={{maxWidth:"70%"}}  onClick={()=>redirect("breakfast")}>
+  <div className="row cola col-lg-3 col-md-5" style={{maxWidth:"70%"}}  onClick={()=>{
+    window.scrollTo(0,0);
+    redirect("breakfast")}}>
     <div  className="image col-lg-5 col-sm-4 col-md-4" style={{maxWidth:"40%"}}>
-    <img src="https://tse2.mm.bing.net/th?id=OIP.1wj0CLOe3uyA-RDg_UNWGgHaLH&pid=Api&P=0&w=300&h=300" id="image" alt="Food image not loading"/></div>
+    <img src="https://tse2.mm.bing.net/th?id=OIP.EA0H10zDq9MNcJP9koMyoQHaKE&pid=Api&P=0&w=300&h=300" id="image" alt="Food image not loading"/></div>
     <div  className="side col-lg-7 col-sm-8 col-md-8" style={{maxWidth:"60%"}} >
     <p className="break">Breakfast</p><br/>
     <p className="sen"> Start your day with exclusive breakfast options</p>
   </div>
   </div>
-  <div className="row cola col-lg-3 col-md-5 " style={{maxWidth:"70%"}} onClick={()=>redirect("lunch")}>
+  <div className="row cola col-lg-3 col-md-5 " style={{maxWidth:"70%"}} onClick={()=>{
+    window.scrollTo(0,0);
+    redirect("lunch")}}>
     <div  className="image col-lg-5 col-sm-4 col-md-4" style={{maxWidth:"40%"}}>
-    <img src="https://tse1.mm.bing.net/th?id=OIP.7zM5De3lBxbjmYk0Wq4DPQHaLH&pid=Api&P=0&w=300&h=300" id="image" alt="Food image not loading"/></div>
+    <img src="https://tse2.mm.bing.net/th?id=OIP.Yv_PT_a-NQFLJMhKjR298QHaLH&pid=Api&P=0&w=122&h=183" id="image" alt="Food image not loading"/></div>
     <div  className="side col-lg-7 col-sm-8 col-md-8" style={{maxWidth:"60%"}}>
      <p className="break">Lunch</p>
     <p className="sen"> Start your day with exclusive lunch options</p>
   </div>
   </div>
-  <div className="row cola col-lg-3 col-md-5" style={{maxWidth:"70%"}}  onClick={()=>redirect("snacks")} >
+  <div className="row cola col-lg-3 col-md-5" style={{maxWidth:"70%"}}  onClick={()=>{
+    window.scrollTo(0,0);
+    redirect("snacks")}} >
     <div  className="image col-lg-5 col-sm-4 col-md-4" style={{maxWidth:"40%"}}>
     <img src="https://tse4.mm.bing.net/th?id=OIP.0JfAey4ygouDjSN-sRgC9wHaLH&pid=Api&P=0&w=300&h=300" id="image" alt="Food image not loading"/></div>
     <div  className="side col-lg-7 col-sm-8 col-md-8" id="snacks" style={{maxWidth:"60%"}}>
@@ -89,7 +95,9 @@ function Header(){
     <p className="sen"> Start your day with exclusive snacks options</p>
   </div>
   </div>
-   <div className="row cola col-lg-3 col-md-5" style={{maxWidth:"70%"}}  onClick={()=>redirect("dinner")}>
+   <div className="row cola col-lg-3 col-md-5" style={{maxWidth:"70%"}}  onClick={()=>{
+     window.scrollTo(0,0);
+     redirect("dinner")}}>
      <div  className="image col-lg-5 col-sm-4 col-md-4" style={{maxWidth:"40%"}}>
     <img src="https://tse1.mm.bing.net/th?id=OIP.uVHVby3WidgE25MJlYBt8AHaLH&pid=Api&P=0&w=300&h=300" id="image" alt="Food image not loading"/></div>
     <div  className="side col-lg-7 col-sm-8 col-md-8"  style={{maxWidth:"60%"}}>
@@ -107,17 +115,21 @@ function Header(){
     <p className="sen"> Start your day with exclusive breakfast options</p>
   </div>
   </div>*/}
-  <div className="row cola col-lg-3 col-md-5" style={{maxWidth:"70%"}}  onClick={()=>redirect("drinks")}>
+  <div className="row cola col-lg-3 col-md-5" style={{maxWidth:"70%"}}  onClick={()=>{
+    window.scrollTo(0,0);
+    redirect("drinks")}}>
     <div  className="image col-lg-5 col-sm-4 col-md-4" style={{maxWidth:"40%"}}>
-    <img src="https://tse2.mm.bing.net/th?id=OIP.EA0H10zDq9MNcJP9koMyoQHaKE&pid=Api&P=0&w=300&h=300" id="image" alt="Food image not loading"/></div>
+    <img src="https://tse4.mm.bing.net/th?id=OIP.vHjAO1J4wZjPvcsv-6BeHQHaK2&pid=Api&P=0&w=108&h=159" id="image" alt="Food image not loading"/></div>
 <div  className="side col-lg-7 col-sm-8 col-md-8"  style={{maxWidth:"60%"}}>
      <p className="break">Drinks</p>
     <p className="sen"> Start your day with exclusive drinks options</p>
   </div>
   </div>
-  <div className="row cola col-lg-3 col-md-5" style={{maxWidth:"70%"}}  onClick={()=>redirect("nightlife")}  >
+  <div className="row cola col-lg-3 col-md-5" style={{maxWidth:"70%"}}  onClick={()=>{
+    window.scrollTo(0,0);
+    redirect("nightlife")}}  >
     <div className="image col-lg-5 col-sm-4 col-md-4" style={{maxWidth:"40%"}}>
-    <img src="https://tse2.mm.bing.net/th?id=OIP.Kiuu8-gpgsZ-FBi3fREg8wHaJ4&pid=Api&P=0&w=300&h=300" id="image" alt="Food image not loading"/></div>
+    <img src="https://tse3.mm.bing.net/th?id=OIP.m525NWy8cT_-zXz-H7CvFQHaJY&pid=Api&P=0&w=139&h=176" id="image" alt="Food image not loading"/></div>
     <div  className="side col-lg-7 col-sm-8 col-md-8"  style={{maxWidth:"60%"}}>
      <p className="break">Nightlife</p>
     <p className="sen"> Start your day with exclusive nightlife options</p>

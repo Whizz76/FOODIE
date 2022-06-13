@@ -2,6 +2,7 @@ import './user.css';
 import {Modal} from 'react-bootstrap'
 import { useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import * as EmailValidator from 'email-validator';
 function User(props){
   const navigate=useNavigate();
   const reqS=useRef(null);
@@ -15,7 +16,7 @@ function User(props){
   const Login=(e)=>{
     e.preventDefault();
     if(loginE===undefined || loginE==="" || loginP===undefined || loginP===""){
-      alert("Please fill all the required fields");
+      setContent("Please fill all the required fields");
     }
     else{
       fetch("http://localhost:3200/login",{
@@ -31,7 +32,7 @@ function User(props){
          window.location.reload();
         }
         else{
-          setContent("No such account exists!");
+          setContent("Email/Password wrong. No account? Create One!");
         }
       }).catch(err=>console.error(err))
     }
@@ -40,6 +41,9 @@ function User(props){
     e.preventDefault();
     if(signE===undefined || signE==="" || signP===undefined || signP==="" || signC===undefined || signC==="" ){
       alert("Please fill all the required fields");
+    }
+    else if(EmailValidator.validate(signE)!=true){
+      alert("Invalid email-id");
     }
     else if(signP!==signC){
         alert("Both passwords don't match");
@@ -62,7 +66,15 @@ function User(props){
    
     const info=props.info;
     return(
-        <Modal show={props.show} onHide={props.close}>
+        <Modal show={props.show} onHide={()=>{
+          setContent("All Fields are required");
+          setLoginE(undefined);
+          setLoginP(undefined);
+          setSignE(undefined);
+          setSignP(undefined);
+          setSignC(undefined);
+          props.close();
+        }}>
             {
                 info==="Login"?(
                    <>
@@ -109,6 +121,7 @@ function User(props){
 </div>
 <div className='submit'>
 <input  onClick={(event)=>SignUp(event)} type="submit" value="Sign-Up"/></div></form>
+<p id="alreadyAccount">Already have a account? <span>Login</span></p>
             </Modal.Body>
                     </>
                 )

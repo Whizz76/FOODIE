@@ -66,7 +66,9 @@ function  Menumodal(props){
             <Modal.Footer>
              <h2>Subtotal: ₹{amount}</h2>
              <button onClick={()=>{
-                 navigate(`/paymentDetails/amount=/${amount}`);
+                 localStorage.setItem("am^unt/Fo^o^die:>)00>@$508^&",amount);
+                 window.scrollTo(0,0);
+                 navigate(`/paymentDetails`);
              }} >Proceed to Pay</button>
              
             </Modal.Footer>

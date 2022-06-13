@@ -24,7 +24,7 @@ function App() {
         <Route path="nextpage/nightlife/restaurant/:id" element={<Details />}></Route>
         <Route path="nextpage/:e" element={<Home/>}></Route>
         <Route path="/accountCreated" element={<Created/>}></Route>
-        <Route path="/paymentDetails/amount=/:amount" element={<Payment/>}></Route>
+        <Route path="/paymentDetails" element={<Payment/>}></Route>
 
       </Routes>
     </div>
